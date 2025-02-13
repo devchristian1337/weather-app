@@ -50,9 +50,21 @@ export const WeatherCard: React.FC = () => {
 
         <div className="grid grid-cols-3 gap-4 text-white">
           {[
-            { Icon: Wind, value: `${current.wind_kph} km/h`, label: "Wind Speed" },
-            { Icon: Droplets, value: `${current.humidity}%`, label: "Humidity" },
-            { Icon: Cloud, value: `${current.precip_mm} mm`, label: "Precipitation" },
+            {
+              Icon: Wind,
+              value: `${current.wind_kph} km/h`,
+              label: "Wind Speed",
+            },
+            {
+              Icon: Droplets,
+              value: `${current.humidity}%`,
+              label: "Humidity",
+            },
+            {
+              Icon: Cloud,
+              value: `${current.precip_mm} mm`,
+              label: "Precipitation",
+            },
           ].map(({ Icon, value, label }, index) => (
             <motion.div
               key={`${location.name}-${index}`}

@@ -75,7 +75,7 @@ const App: React.FC = () => {
             href="https://github.com/devchristian1337/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors transform hover:rotate-12 transition-all duration-300 ease-in-out"
+            className="hover:text-white transform hover:rotate-12 transition-all duration-300 ease-in-out"
             aria-label="Visit my GitHub profile"
           >
             <Github className="w-5 h-5" />
